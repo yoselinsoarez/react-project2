@@ -5,7 +5,7 @@ import React from 'react'
 
 function CompraDisco({nombre,precio,color,setTotal}) {
   const comprar=()=>{
-    setTotal()
+    setTotal((elementos) => elementos+precio);
 
   }
   return <>
