@@ -1,19 +1,20 @@
 import './App.css';
 import { useState } from 'react';
-import Cena from './Components/Cena';
+import CompraDisco from './Components/CompraDisco';
+
 
 function App() {
-  const emojis=[
+  const discos=[
     {
-      nombre:'Happy',
+      nombre:'Disco1',
       color:'yellow',
       precio:50
     }, {
-      nombre:'Chill',
+      nombre:'Disco2',
       color:'blue',
       precio:100
     }, {
-      nombre:'Guiño',
+      nombre:'Disco3',
       color:'darkmagenta',
       precio:150
     }
@@ -26,9 +27,9 @@ function App() {
     <>
     <h1>Total a pagar: ${total}</h1>
     <div className='cajaCentral'>
-    <Cena nombre={emojis[0].nombre} color={emojis[0].color} precio={emojis[0].precio} setTotal={setTotal}/>
-    <Cena nombre={emojis[1].nombre} color={emojis[1].color} precio={emojis[1].precio} setTotal={setTotal}/>
-    <Cena nombre={emojis[2].nombre} color={emojis[2].color} precio={emojis[2].precio} setTotal={setTotal}/>
+    <CompraDisco nombre={discos[0].nombre} color={discos[0].color} precio={discos[0].precio} setTotal={setTotal}/>
+    <CompraDisco nombre={discos[1].nombre} color={discos[1].color} precio={discos[1].precio} setTotal={setTotal}/>
+    <CompraDisco nombre={discos[2].nombre} color={discos[2].color} precio={discos[2].precio} setTotal={setTotal}/>
     </div>
     </>
       

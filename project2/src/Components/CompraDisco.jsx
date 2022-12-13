@@ -1,18 +1,17 @@
 import React from 'react'
-import imagen1 from '../imagenes/chill.png';
 
 
 
-function Cena({nombre,precio,color,setTotal}) {
+
+function CompraDisco({nombre,precio,color,setTotal}) {
   const comprar=()=>{
     setTotal()
 
   }
   return <>
-  <div className='emojis' style={{backgroundColor:color}}>
+  <div className='discos' style={{backgroundColor:color}}>
     <h1>{nombre}</h1>
-    <img src={imagen1}
-      alt='chill'/>
+    
       
 
     <div className='titulo'></div>
@@ -27,4 +26,4 @@ function Cena({nombre,precio,color,setTotal}) {
   </>;
 }
 
-export default Cena;
+export default CompraDisco;
